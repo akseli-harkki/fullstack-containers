@@ -1,0 +1,60 @@
+Script started on 2023-11-28 14:58:48+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="55"]
+[?2004h]0;akseli@T470: /projects/fullstack/osa12/todo-app/todo-backend[01;32makseli@T470[00m:[01;34m/projects/fullstack/osa12/todo-app/todo-backend[00m$ mkdir a/b/c[7Pexitdocker start -i intelligent_perlman exit[Kdocker start -i intelligent_perlman exit[Kdocker start -i intelligent_perlman exit[Kdocker start -i intelligent_perlman exit[Kdocker start -i intelligent_perlman exit[Kdocker start -i intelligent_perlman exit[Kmkdir a/b/c[Kdocker exec -it todo-backend-mongo-1 bash
+[?2004l[?2004hroot@39b251701be1:/# mongosh u- root       -u root -p example
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6565e4677f831fcf17fdd71f
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2[0m
+Using MongoDB:		7.0.3
+[1m[33mUsing Mongosh[0m:		2.0.2
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-11-28T11:32:06.934+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2023-11-28T11:32:07.683+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   72.00 KiB
+[1G[0Jtest> [7G[1G[0Jtest> [7G[1G[0Jtest> [7G[1G[0Jtest> [7G[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.insertOne({ text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32mb[39m[32me[39m[32mr[39m[1G[0Jthe_database> db.todos.insertOne({ [33mtext[39m: [32m"Increase the number of tools in my toolbe[39m[84G[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone: fals[33mfalse[39m })
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("6565e4ec7f831fcf17fdd720")
+}
+[1G[0Jthe_database> [15Gds.[1G[0Jthe_database> ds[17G[1G[0Jthe_database> d[16Gb.todos.find({})
+[
+  {
+    _id: ObjectId("6565cbae405ef77b7535b49c"),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("6565cbae405ef77b7535b49d"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("6565e2cbd3b0b82a40c3175e"),
+    text: [32m'test'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("6565e4ec7f831fcf17fdd720"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gquit()
+[?2004hroot@39b251701be1:/# exit
+[?2004lexit
+[?2004h]0;akseli@T470: /projects/fullstack/osa12/todo-app/todo-backend[01;32makseli@T470[00m:[01;34m/projects/fullstack/osa12/todo-app/todo-backend[00m$ es[Kxit
+[?2004lexit
+
+Script done on 2023-11-28 15:03:22+02:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,6 @@
+.dockerignore
+node_modules
+.env
+mongo_data
+redis_data
+requests
