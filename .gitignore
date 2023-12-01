@@ -1,6 +1,10 @@
 .dockerignore
 node_modules
 .env
+server-variables.env
 mongo_data
 redis_data
 requests
+build
+dist
+
